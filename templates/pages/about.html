@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% block title %} | About Us {% endblock%}
 {% block content%}
 <section id="showcase-inner" class="py-5 text-white">
     <div class="container">
@@ -39,7 +40,7 @@
         </div>
         <div class="col-md-4">
           {% if mvp_realtors %}
-            {% for realtor in mvp_realtors %}
+            {% for realtor in mvp_realtors  %}
             <div class="card">
               <img class="card-img-top" src="{{ realtor.photo.url }}" alt="Seller of the month">
               <div class="card-body">

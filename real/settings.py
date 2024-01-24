@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'contacts.apps.ContactsConfig',
+    'accounts.apps.AccountsConfig',
     'pages.apps.PagesConfig',
     'listings.apps.ListingsConfig',
     'django.contrib.humanize',
@@ -138,3 +140,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #Media Folder Settings
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+# Messages
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger'
+}
+
+#Emial Config
+EMAIL_HOST = 'smpt.gmail.com'
+EMAIL_PORT= 587
+EMAIL_HOST_USER= 'sammucomp@gmail.com'
+EMAIL_HOST_PASSWORD='Sammu/13'
+EMAIL_USE_TLS=True
