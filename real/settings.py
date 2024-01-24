@@ -150,6 +150,6 @@ MESSAGE_TAGS = {
 #Emial Config
 EMAIL_HOST = 'smpt.gmail.com'
 EMAIL_PORT= 587
-EMAIL_HOST_USER= 'sammucomp@gmail.com'
-EMAIL_HOST_PASSWORD='Sammu/13'
+EMAIL_HOST_USER= ''
+EMAIL_HOST_PASSWORD=''
 EMAIL_USE_TLS=True
